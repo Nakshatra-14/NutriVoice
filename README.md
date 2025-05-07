@@ -1,5 +1,6 @@
 # NutriVoice
 
+# [DEMO Video](https://vimeo.com/1082231691/ccefc61966?share=copy)
 **Scan Smart, Eat Wise: NutriVoice Guides.**
 
 NutriVoice is an Android app that empowers everyone to make informed food choices. By scanning food barcodes, it delivers nutritional insights, diabetes-friendly recommendations, and personalized, multilingual guidance, inspired by the clarity of Japanese and Singaporean food packaging.
