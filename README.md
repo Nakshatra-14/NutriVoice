@@ -71,8 +71,8 @@ NutriVoice bridges the gap between complex food labels and user-friendly guidanc
    ```bash
    git clone https://github.com/[YourUsername]/NutriVoice.git
 
-   - **Repo Organization**:
-  - Use a standard Android project structure:
+- **Repo Organization**:
+  - Android project structure:
     ```
     NutriVoice/
     ├── app/
