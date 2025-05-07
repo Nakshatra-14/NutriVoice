@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Nutrition Info Scan</string>
+    <string name="product_img">Product Image</string>
+    <string name="nutriScore_a">🟢 Very good nutrition quality 🟢</string>
+    <string name="nutriScore_b">🟢 Good nutrition quality 🟢</string>
+    <string name="nutriScore_c">🟡 Low nutrition quality 🟡</string>
+    <string name="nutriScore_d">🟠 Bad nutrition quality 🟠</string>
+    <string name="nutriScore_e">🔴 Very bad nutrition quality 🔴</string>
+    <string name="test">1\n2\n3\n4\n4\n5\n6\n7\n8\n9</string>
+    <string name="loading">"                    Loading Data..."</string>
+    <string name="nutriScoreImg">NutriScoreImg</string>
+    <string name="ecoScoreImg">ecoScoreImg</string>
+    <string name="title1">What is Nutri-Score ?</string>
+    <string name="title2">What is Eco-Score ?</string>
+    <string name="description1">A Nutri-Score calculation pinpoints the nutritional value of a product (based on the ingredients) and assigns it to one of the five colour-coded letter grade classes (A, B, C, D, or E). Products that get an A score have the highest nutritional value — those that score an E have the lowest nutritional value.</string>
+    <string name="description2">Eco-Score classes food products from A (low) to E (high) according to their impact on the environment. Eco-Score aims to inform consumers on the environmental impact of the food they choose so as to guide them towards more responsible consumption.</string>
+    <string name="title3">Scoring System:</string>
+    <string name="description3">
+        <b>Glycemic Index (GI): If the GI is available, use it as-is.\n</b>
+        Low GI (0-55): +2 points\n
+        Medium GI (56-69): +1 point\n
+        High GI (70+): 0 points\n\n<b>Total Carbohydrates: Use the per-100g value.</b>\n
+        Low carbs (0-10g per 100g): +2 points\n
+        Moderate carbs (11-20g per 100g): +1 point\n
+        High carbs (21+g per 100g): 0 points\n\n<b>Sugar Content: Use the per-100g value.</b>\n
+
+        Low sugar (0-5g per 100g): +2 points\n
+        Moderate sugar (6-10g per 100g): +1 point\n
+        High sugar (11+g per 100g): 0 points\n\n<b>Dietary Fiber: Use the per-100g value.</b>\n
+
+        High fiber (3g+ per 100g): +2 points\n
+        Moderate fiber (1-2g per 100g): +1 point\n
+        Low fiber (0g per 100g): 0 points\n\n<b>Fat Content: This can be further broken down into healthy and unhealthy fats, if the data is available.</b>\n
+
+        Healthy fats (e.g., unsaturated fats): +1 point\n
+        Unhealthy fats (e.g., saturated fats): 0 points\n\n
+        <b>Glycemic Index(GI) calculation:</b>\n\nGI = ( ( (sugar) + ( (carb) - (fiber) - (sugar) ) * 0.5 ) / (carb) ) * 100
+    </string>
+    <string name="teamTitle">Made successful by Real Vision Team\n(Click Here)</string>
+    <string name="team_detail"><b>Team Members</b>\n\n\nNakshatra Naskar - Android Dev
+<!--        \n\nGourab Roy - Assistant Dev\n\nAnkit Paul - Web Dev\n\nKunal Dutta - Web Dev\n\nAnanya Laha - Tester\n\nSubhanki Das - Editor-->
+    </string>
+    <string name="description4">Nutri-Score = A\nThen the product is Very good nutrition quality 🟢\n\nNutri-Score = B\nThen the product is Good nutrition quality 🟢\n\nNutri-Score = C\nThen the product is Low nutrition quality 🟡\n\n Nutri-Scor = D\nThen the product is Bad nutrition quality 🟠\n\nNutri-Score = E\nThen the product is Very bad nutrition quality 🔴</string>
+    <string name="EnterBarcode">Manual Barcode Input</string>
+    <string name="submit">Submit</string>
+</resources>

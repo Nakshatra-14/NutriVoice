@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp">
+
+    <!-- Lottie Animation -->
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimation"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:lottie_rawRes="@raw/nutrition_animation"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+
+    <!-- Welcome Header -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to NutriVoice!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="?android:attr/textColorPrimary"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Update/View Profile Button -->
+    <Button
+        android:id="@+id/btnUpdateProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update/View Profile"
+        android:textSize="18sp"
+        android:backgroundTint="#FF5722"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:transitionName="profile_button" />
+
+    <!-- Scan Barcode Button -->
+    <Button
+        android:id="@+id/btnScanBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scan Barcode"
+        android:textSize="18sp"
+        android:backgroundTint="#4CAF50"
+        android:layout_marginBottom="16dp"
+        android:padding="12dp"
+        android:scaleX="1.0"
+        android:scaleY="1.0"
+        android:transitionName="scan_button" />
+
+</LinearLayout>

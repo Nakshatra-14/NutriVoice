@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonPaddingVertical="50dp"
+        app:autoFocusButtonPaddingHorizontal="30dp"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonPaddingVertical="50dp"
+        app:flashButtonPaddingHorizontal="30dp"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="50dp"
+        app:frameCornersSize="90dp"
+        app:frameSize="0.75"
+        app:frameThickness="5dp"
+        app:frameVerticalBias="0.3"
+        app:maskColor="#77000000">
+
+        <TextView
+            android:id="@+id/instruction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center_vertical"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingTop="50dp"
+            android:text="Manual Input\n(Click Here)"
+            android:textColor="@android:color/white"
+            android:textSize="28sp" />
+
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <TextView
+        android:id="@+id/teamInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|bottom"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:padding="30dp"
+        android:text="@string/teamTitle"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</FrameLayout>
