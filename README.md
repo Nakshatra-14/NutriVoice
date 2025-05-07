@@ -44,7 +44,7 @@ Building NutriVoice came with several hurdles, each teaching me resilience and c
 - **Multilingual TTS**: Configuring Android’s TTS engine for Hindi and Bengali was challenging due to limited high-quality voices. I iterated on voice selection logic to prioritize Wavenet voices and adjusted pitch/speed for clarity.
 - **Personalization**: Balancing personalization (e.g., using user profiles) with simplicity was tough. I refined the Gemini API prompt to incorporate user data (age, diabetes value) while keeping narratives concise and relevant.
 - **UI Polish**: The initial loading dialog’s white-background GIF clashed with a transparent background, looking unprofessional. I redesigned it with a white window background and full-width layout to blend seamlessly, inspired by clean packaging aesthetics.
-- **Global Usability**: Ensuring the app worked globally required testing with diverse barcodes (e.g., US, European products) and verifying that nutritional data was universally relevant, which involved extensive API testing.
+- **Global Usability**: Ensuring the app worked globally required testing with diverse barcodes and verifying that nutritional data was universally relevant, which involved extensive API testing.
 
 ### Why NutriVoice Matters
 NutriVoice bridges the gap between complex food labels and user-friendly guidance, inspired by the clarity of Japanese and Singaporean packaging. Whether you’re managing diabetes like my father or simply seeking healthier choices, NutriVoice empowers you with instant nutritional insights, personalized advice, and multilingual narration. By making healthy eating accessible and engaging for everyone, anywhere, NutriVoice is more than an app—it’s a step toward a healthier, more sustainable world.
