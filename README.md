@@ -70,3 +70,19 @@ NutriVoice bridges the gap between complex food labels and user-friendly guidanc
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/[YourUsername]/NutriVoice.git
+
+   - **Repo Organization**:
+  - Use a standard Android project structure:
+    ```
+    NutriVoice/
+    ├── app/
+    │   ├── src/
+    │   │   ├── main/
+    │   │   │   ├── java/com/example/newscan/
+    │   │   │   ├── res/
+    │   │   │   └── AndroidManifest.xml
+    │   └── build.gradle
+    ├── LICENSE
+    ├── README.md
+    └── build.gradle
+    ```
