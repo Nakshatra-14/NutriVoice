@@ -1,4 +1,4 @@
-package com.example.newscan
+package com.example.newscanexp
 
 import android.content.Intent
 import android.graphics.Typeface
@@ -17,9 +17,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import com.example.newscan.data.DatabaseModule
-import com.example.newscan.UserProfile
-import com.squareup.moshi.Json
+import com.example.newscanexp.data.DatabaseModule
 import com.squareup.moshi.JsonClass
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.CoroutineScope
@@ -185,9 +183,46 @@ class DetailActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
     private lateinit var loadingDialog: AlertDialog
     private lateinit var mainContent: LinearLayout
 
-    
-    private val geminiApiKey = "YOUR_API_KEY_HERE"
-    private val geminiApiUrl = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=$geminiApiKey"
+    // Placeholder for Perplexity API integration (not active due to payment barrier)
+    private val perplexityApiKey = "YOUR_PERPLEXITY_API_KEY_HERE" // Add Perplexity API key here
+
+    /**
+     * Placeholder function to fetch nutritional research using Perplexity API.
+     * Not called in current version due to unavailable API key (payment required).
+     * Planned to enhance narratives with real-time dietary insights.
+     */
+    private fun fetchPerplexityResearch(productName: String, userProfile: String): String {
+        // Mock implementation for Perplexity API call
+        /*
+        val client = OkHttpClient()
+        val mediaType = MediaType.parse("application/json")
+        val requestBody = """
+            {
+                "model": "sonar-pro",
+                "messages": [
+                    {"role": "system", "content": "Provide concise nutritional advice."},
+                    {"role": "user", "content": "Benefits of $productName for ${userProfile.diabetesValue} users"}
+                ]
+            }
+        """.trimIndent()
+        val request = Request.Builder()
+            .url("https://api.perplexity.ai/chat/completions")
+            .header("Authorization", "Bearer $perplexityApiKey")
+            .header("Content-Type", "application/json")
+            .post(RequestBody.create(mediaType, requestBody))
+            .build()
+        client.newCall(request).execute().use { response ->
+            if (response.isSuccessful) {
+                val json = response.body()?.string()
+                // Parse JSON for research text (e.g., choices[0].message.content)
+                return json ?: "Perplexity research unavailable"
+            }
+        }
+        */
+        // Fallback until API key is obtained
+        return "Perplexity API research pending key activation"
+    }
+
     private val okHttpClient = RetrofitInstance.client
     private val moshi = Moshi.Builder().add(com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory()).build()
 
@@ -416,7 +451,7 @@ class DetailActivity : AppCompatActivity(), TextToSpeech.OnInitListener {
         val payload = """{"contents":[{"parts":[{"text":"$prompt"}]}]}"""
         val requestBody = payload.toRequestBody("application/json".toMediaType())
         val request = Request.Builder()
-            .url(geminiApiUrl)
+            .url(fetchPerplexityResearch("Product Name", "Nax"))
             .post(requestBody)
             .build()
 
